@@ -39,5 +39,3 @@ try:
 except:
     print("pls input tt")
 
-
-print("test commit by chayawooth")
