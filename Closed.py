@@ -10,11 +10,12 @@ try:
     print("ticketNum :", ticketNum)
     print("cause :", cause)
     print("subcause :", subcause)
-    times = datetime.datetime.now() - datetime.timedelta(seconds=3)
+    times = datetime.datetime.now() - datetime.timedelta(seconds=5)
     nows = datetime.datetime.now()
     print("Now time : ", nows)
     print("New time : ", times)
-    reportdate = times.strftime("%Y-%m-%dT%H:%M:%S")
+    #reportdate = nows.strftime("%Y-%m-%dT%H:%M:%S")
+    reportdate = "2022-06-08T04:44:11"
     affecteddate = times.strftime("%Y-%m-%dT%H:%M:%S")
     url = "http://10.50.90.202:8080/nttservice/msom-ticket"
     headers = {'Content-type': 'application/json',"Content-Encoding": "gzip, deflate, br"}
