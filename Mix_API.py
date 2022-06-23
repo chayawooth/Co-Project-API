@@ -6,6 +6,13 @@ import json
 from urllib.request import urlopen
 import requests
 import datetime
+import sys
+
+try:
+    arg1=sys.argv[1]
+except:
+    print("No argv!!")
+
 
 today = datetime.datetime.now ().strftime ( "%Y-%m-%dT%H:%M:%S" )
 url = "http://10.50.90.202:8080"
