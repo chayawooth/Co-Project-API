@@ -5,7 +5,7 @@ import datetime
 from configure import *
 try:
     wonumber=sys.argv[1]
-    times=datetime.datetime.now() - datetime.timedelta(seconds=3)
+    times=datetime.datetime.now() - datetime.timedelta(hours=12)
     nows = datetime.datetime.now()
     reportdate=times.strftime("%Y-%m-%dT%H:%M:%S")
     affecteddate=times.strftime("%Y-%m-%dT%H:%M:%S")
@@ -15,7 +15,7 @@ try:
     payload = json.dumps({"wonum" : wonumber ,
                                         "externalsystem" : "CFM" ,
                                         "status" : "COMP" ,
-                                        "updateby" : "01063472" ,
+                                        "updateby" : "01028197" ,
                                         "failurecode" : "MSOM" ,
                                         "problemcode" : "MS014" ,
                                         "causecode" : "MS0037" ,
@@ -23,6 +23,7 @@ try:
                                         "restorationdate" : reportdate
                            } )
     print("Now time : ", nows)
+
     print("New time : ", times)
     print(payload)
     response = requests.request("patch", url, headers=headers, data=payload,auth = ( user , pwd ))

@@ -5,7 +5,7 @@ import datetime
 from configure import *
 try:
     wonumber=sys.argv[1]
-    times=datetime.datetime.now() - datetime.timedelta(seconds=3)
+    times=datetime.datetime.now() - datetime.timedelta(hours=12)
     nows = datetime.datetime.now()
     reportdate=times.strftime("%Y-%m-%dT%H:%M:%S")
     affecteddate=times.strftime("%Y-%m-%dT%H:%M:%S")
