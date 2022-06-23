@@ -10,7 +10,7 @@ try:
     reportdate=times.strftime("%Y-%m-%dT%H:%M:%S")
     affecteddate=times.strftime("%Y-%m-%dT%H:%M:%S")
 
-    url = "http://10.50.90.202:8080/nttservice/msom-ticket"
+    url = "http://10.50.90.202:8080/nttservice/msom-activity"
     headers = {'Content-type': 'application/json'}
     payload = json.dumps({ "wonum" : wonumber ,
                                         "externalsystem" : "CFM" ,
