@@ -2,7 +2,7 @@ import requests
 import json
 import sys
 import datetime
-
+from configure import *
 try:
     ticketNum = sys.argv[1]
     cause = sys.argv[2]
@@ -30,7 +30,7 @@ try:
         "remedycode": "MS01",
         "restorationdate": reportdate })
     print(payload)
-    response = requests.request("PATCH", url, headers=headers, data=payload, auth=("Chayawo", "cdexswzaQ*01028197"))
+    response = requests.request("PATCH", url, headers=headers, data=payload, auth=(user , pwd))
     print(requests.get(url).headers)
     # print(response.headers)
     print(response.text)

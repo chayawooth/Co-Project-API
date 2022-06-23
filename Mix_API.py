@@ -7,7 +7,7 @@ from urllib.request import urlopen
 import requests
 import datetime
 import sys
-
+from configure import *
 try:
     arg1=sys.argv[1]
 except:
@@ -16,8 +16,8 @@ except:
 
 today = datetime.datetime.now ().strftime ( "%Y-%m-%dT%H:%M:%S" )
 url = "http://10.50.90.202:8080"
-user = "Wallop2"
-password = "Wa!!0p@chan2022"
+user = user_ice
+password = password_ice
 severity = "NSA6"
 createby = "CFM"
 reportby = "01063472"

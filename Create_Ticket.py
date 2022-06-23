@@ -2,7 +2,7 @@ import requests
 import json
 import sys
 import datetime
-
+from configure import *
 try:
     subject=sys.argv[1]
     longdescription = sys.argv[2]
@@ -28,7 +28,7 @@ try:
     print("Now time : ", nows)
     print("New time : ", times)
     print(payload)
-    response = requests.request("POST", url, headers=headers, data=payload,auth = ("Chayawo" , "cdexswzaQ*01028197"))
+    response = requests.request("POST", url, headers=headers, data=payload,auth = ( user , pwd ))
     print(requests.get(url).headers)
     #print(response.headers)
     print(response.text)
