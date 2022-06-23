@@ -1,0 +1,16 @@
+
+
+TicketNum =""
+activity_id=""
+
+
+maim
+..
+condition
+..
+team= ??
+
+
+Create_Ticket ==> TicketNum
+Assign_Activity (TicketNum , team ) ==> Wonum(activity_id )
+

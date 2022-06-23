@@ -5,6 +5,7 @@ import datetime
 from configure import *
 try:
     ticketid=sys.argv[1]
+    assignedactivityowner=sys.argv[2]
     times=datetime.datetime.now() - datetime.timedelta(hours=12)
     nows = datetime.datetime.now()
     reportdate=times.strftime("%Y-%m-%dT%H:%M:%S")
@@ -27,5 +28,6 @@ try:
     print(response.text)
 except:
     print("please input ticketid ")
+    print("Ex. TT12345678990 MSOMSC32")
 
 print("Process Done!!")
