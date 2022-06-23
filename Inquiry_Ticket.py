@@ -10,6 +10,7 @@ try:
     response = requests.get(url + ticketid)
 
     #Result
+
     print(response.json()['msomticketlist'][0])
 
     print("####### TT Inquiry ######")
@@ -35,7 +36,9 @@ try:
     print("creationdate : ",response.json()['msomticketlist'][0]['creationdate'])
     print("restorationdate : ",response.json()['msomticketlist'][0]['restorationdate'])
     print("externalsystemuser : ",response.json()['msomticketlist'][0]['externalsystemuser'])
+    print("wonum : ",response.json()['msomticketlist'][0]['msomactivitylist'][2]['wonum'])
     print("########### End ############ chayawooth")
 except:
     print("pls input ticket number")
 
+print("Response :",response.json())
