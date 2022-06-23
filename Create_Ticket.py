@@ -6,7 +6,7 @@ from configure import *
 try:
     subject=sys.argv[1]
     longdescription = sys.argv[2]
-    times=datetime.datetime.now() - datetime.timedelta(seconds=3)
+    times=datetime.datetime.now() - datetime.timedelta(hours=12)
     nows = datetime.datetime.now()
     reportdate=times.strftime("%Y-%m-%dT%H:%M:%S")
     affecteddate=times.strftime("%Y-%m-%dT%H:%M:%S")

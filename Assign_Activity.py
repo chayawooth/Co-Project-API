@@ -5,7 +5,7 @@ import datetime
 from configure import *
 try:
     ticketid=sys.argv[1]
-    times=datetime.datetime.now() - datetime.timedelta(seconds=3)
+    times=datetime.datetime.now() - datetime.timedelta(hours=12)
     nows = datetime.datetime.now()
     reportdate=times.strftime("%Y-%m-%dT%H:%M:%S")
     affecteddate=times.strftime("%Y-%m-%dT%H:%M:%S")
@@ -14,9 +14,9 @@ try:
     headers = {'Content-type': 'application/json'}
     payload = json.dumps({ "ticketid" : ticketid ,
                                        "externalsystem" : "CFM" ,
-                                       "ciname" : "CCS0001A" ,
+                                       "ciname" : "" ,
                                        "subject" : "Test subject" ,
-                                       "assignedactivityowner" : "UPC01E-RF"
+                                       "assignedactivityowner" : "MSOMSC32"
                            } )
     print("Now time : ", nows)
     print("New time : ", times)
