@@ -14,3 +14,16 @@ team= ??
 Create_Ticket ==> TicketNum
 Assign_Activity (TicketNum , team ) ==> Wonum(activity_id )
 
+
+import pathA/All_Method.py as Func
+loop{
+excel ==> 1 2 3 4
+Fun.Create() 1 2 3
+Fun.Assing_Activity() 5 4
+updateEx 5 6
+}
+
+loop{
+excel ==> 1 2 3 4 5 6
+python Close.py
+}
