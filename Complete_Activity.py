@@ -20,7 +20,7 @@ try:
                                         "problemcode" : "MS014" ,
                                         "causecode" : "MS0037" ,
                                         "remedycode" : "MS01" ,
-                                        "restorationdate" : today
+                                        "restorationdate" : reportdate
                            } )
     print("Now time : ", nows)
     print("New time : ", times)
