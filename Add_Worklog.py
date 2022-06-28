@@ -14,9 +14,10 @@ try:
     url = "http://10.50.90.202:8080/nttservice/msom-ticket-worklog"
     headers = {'Content-type': 'application/json'}
     payload = json.dumps({ "createby" : "01028197" ,
-                                       "recordkey" : ticketid ,
-                                       "subject" : "Update log" + ticketid ,
-                                       "longdescription" : worklog
+                            "recordkey" : ticketid ,
+                            "subject" : "Update log" + ticketid ,
+                            "longdescription" : worklog,
+                            "Senttocfm" :  "1"
                            } )
     print("Now time : ", nows)
     print("New time : ", times)
