@@ -17,7 +17,7 @@ try:
                             "recordkey" : ticketid ,
                             "subject" : "Update log" + ticketid ,
                             "longdescription" : worklog,
-                            "Senttocfm" :  "1"
+                            "senttocfm" :  "1"
                            } )
     print("Now time : ", nows)
     print("New time : ", times)
